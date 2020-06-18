@@ -40,10 +40,10 @@
 //
 //M*/
 
-#include "precomp.hpp"
-#include "stabilizer.hpp"
-#include "ring_buffer.hpp"
-#include "define.hpp"
+#include "../include/precomp.hpp"
+#include "../include/stabilizer.hpp"
+#include "../include/ring_buffer.hpp"
+#include "../include/define.hpp"
 #include <opencv2/core/core.hpp>
 
 // for debug purposes
@@ -212,7 +212,7 @@ void StabilizerBase::stabilizeFrame()
         deblurer_->deblur(curStabilizedPos_, preProcessedFrame_);
     }
     else
-//        preProcessedFrame_ = at(curStabilizedPos_, frames_);           //¸Ð¾õÓÐµãÎÊÌâ
+//        preProcessedFrame_ = at(curStabilizedPos_, frames_);           //ï¿½Ð¾ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
 preProcessedFrame_ = at(curPos_,frames_);	
 #ifdef HAVE_OPENCL
 preProcessedFrameOcl.upload(preProcessedFrame_);

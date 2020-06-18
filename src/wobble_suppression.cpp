@@ -40,9 +40,9 @@
 //
 //M*/
 
-#include "precomp.hpp"
-#include "wobble_suppression.hpp"
-#include "ring_buffer.hpp"
+#include "../include/precomp.hpp"
+#include "../include/wobble_suppression.hpp"
+#include "../include/ring_buffer.hpp"
 
 using namespace std;
 

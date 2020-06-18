@@ -40,10 +40,10 @@
 //
 //M*/
 
-#include "precomp.hpp"
-#include "deblurring.hpp"
-#include "global_motion.hpp"
-#include "ring_buffer.hpp"
+#include "../include/precomp.hpp"
+#include "../include/deblurring.hpp"
+#include "../include/global_motion.hpp"
+#include "../include/ring_buffer.hpp"
 
 using namespace std;
 

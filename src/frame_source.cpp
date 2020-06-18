@@ -40,10 +40,10 @@
 //
 //M*/
 
-#include "precomp.hpp"
-#include "frame_source.hpp"
-#include "ring_buffer.hpp"
-#include "define.hpp"
+#include "../include/precomp.hpp"
+#include "../include/frame_source.hpp"
+#include "../include/ring_buffer.hpp"
+#include "../include/define.hpp"
 
 #include "opencv2/opencv_modules.hpp"
 #ifdef HAVE_OPENCV_HIGHGUI
@@ -114,10 +114,10 @@ VideoFileSource::VideoFileSource(const string &path, bool volatileFrame)
 void VideoFileSource::reset() { impl->reset(); }
 Mat VideoFileSource::nextFrame() { return impl->nextFrame(); }
 
-int VideoFileSource::width() { return ((VideoFileSourceImpl*)impl.obj)->width(); }
-int VideoFileSource::height() { return ((VideoFileSourceImpl*)impl.obj)->height(); }
-int VideoFileSource::count() { return ((VideoFileSourceImpl*)impl.obj)->count(); }
-double VideoFileSource::fps() { return ((VideoFileSourceImpl*)impl.obj)->fps(); }
+int VideoFileSource::width() { return ((VideoFileSourceImpl*)impl.get())->width(); }
+int VideoFileSource::height() { return ((VideoFileSourceImpl*)impl.get())->height(); }
+int VideoFileSource::count() { return ((VideoFileSourceImpl*)impl.get())->count(); }
+double VideoFileSource::fps() { return ((VideoFileSourceImpl*)impl.get())->fps(); }
 
 void VideoCaptureSource::release()
 {

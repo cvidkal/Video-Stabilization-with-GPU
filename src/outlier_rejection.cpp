@@ -40,9 +40,9 @@
 //
 //M*/
 
-#include "precomp.hpp"
+#include "../include/precomp.hpp"
 #include "opencv2/core/core.hpp"
-#include "outlier_rejection.hpp"
+#include "../include/outlier_rejection.hpp"
 
 using namespace std;
 

@@ -40,10 +40,10 @@
 //
 //M*/
 
-#include "precomp.hpp"
+#include "../include/precomp.hpp"
 #include <cstdio>
 #include <cstdarg>
-#include "log.hpp"
+#include "../include/log.hpp"
 
 using namespace std;
 

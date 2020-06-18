@@ -7,10 +7,9 @@
 #include "opencv2/video/video.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
-#include "videostab.hpp"
+#include "../include/videostab.hpp"
 #include "opencv2/opencv_modules.hpp"
-#include "define.hpp"
-#include <WinSock2.h>
+#include "../include/define.hpp"
 
 #define arg(name) cmd.get<string>(name)
 #define argb(name) cmd.get<bool>(name)

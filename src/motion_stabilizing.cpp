@@ -40,11 +40,11 @@
 //
 //M*/
 
-#include "precomp.hpp"
-#include "motion_stabilizing.hpp"
-#include "global_motion.hpp"
-#include "ring_buffer.hpp"
-#include "clp.hpp"
+#include "../include/precomp.hpp"
+#include "../include/motion_stabilizing.hpp"
+#include "../include/global_motion.hpp"
+#include "../include/ring_buffer.hpp"
+#include "../include/clp.hpp"
 
 using namespace std;
 

@@ -40,14 +40,14 @@
 //
 //M*/
 
-#include "precomp.hpp"
-#include "global_motion.hpp"
-#include "ring_buffer.hpp"
-#include "outlier_rejection.hpp"
+#include "../include/precomp.hpp"
+#include "../include/global_motion.hpp"
+#include "../include/ring_buffer.hpp"
+#include "../include/outlier_rejection.hpp"
 #include "opencv2/opencv_modules.hpp"
-#include "clp.hpp"
-#include "define.hpp"
-#include "opencv2/ocl/ocl.hpp"
+#include "../include/clp.hpp"
+#include "../include/define.hpp"
+#include "opencv2/core/ocl.hpp"
 //#include <CL/cl.h>
 using namespace std;
 namespace cv
@@ -697,6 +697,7 @@ KeypointBasedMotionEstimator::KeypointBasedMotionEstimator(Ptr<MotionEstimatorBa
     setOpticalFlowEstimator(new SparsePyrLkOptFlowEstimator());
     setOutlierRejector(new NullOutlierRejector());
 }
+
 
 
 Mat KeypointBasedMotionEstimator::estimate(const Mat &frame0, const Mat &frame1, bool *ok)

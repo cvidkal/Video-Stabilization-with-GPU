@@ -40,9 +40,9 @@
 //
 //M*/
 
-#include "precomp.hpp"
-#include "fast_marching.hpp"
-#include "ring_buffer.hpp"
+#include "../include/precomp.hpp"
+#include "../include/fast_marching.hpp"
+#include "../include/ring_buffer.hpp"
 
 using namespace std;
 

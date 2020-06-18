@@ -40,12 +40,12 @@
 //
 //M*/
 
-#include "precomp.hpp"
+#include "../include/precomp.hpp"
 #include <queue>
-#include "inpainting.hpp"
+#include "../include/inpainting.hpp"
 //#include "opencv2/videostab/global_motion.hpp"
-#include "fast_marching.hpp"
-#include "ring_buffer.hpp"
+#include "../include/fast_marching.hpp"
+#include "../include/ring_buffer.hpp"
 #include "opencv2/opencv_modules.hpp"
 
 using namespace std;
